@@ -4,3 +4,8 @@
 */cache/*
 !*/cache/index.html
 !*/cache/.htaccess
+*/.DS_Store
+*/config/database.php
+database.php
+application/config/development 
+application/database.php
