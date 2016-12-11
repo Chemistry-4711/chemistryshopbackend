@@ -38,7 +38,7 @@ CREATE TABLE `Inventory` (
 
 LOCK TABLES `Inventory` WRITE;
 /*!40000 ALTER TABLE `Inventory` DISABLE KEYS */;
-INSERT INTO `Inventory` VALUES (1,'gun-powder','ned',1,420),(2,'h2o','wonderland',6666,1),(3,'peanuts','superstore',50,5),(4,'lithium','amazon',666,200),(5,'hydrochloric-acid','bill',666,670),(6,'eggs','superstore',1,20),(7,'milk','superstore',300,20),(8,'vanilla-extract','superstore',500,20),(9,'flour','superstore',700,20),(10,'gun-powders','neds',1,4200);
+INSERT INTO `Inventory` VALUES (1,'gun_powder','ned',1,420),(2,'h2o','wonderland',6666,1),(3,'peanuts','superstore',50,5),(4,'lithium','amazon',666,200),(5,'hydrochloric_acid','bill',666,670),(6,'eggs','superstore',1,20),(7,'milk','superstore',300,20),(8,'vanilla_extract','superstore',500,20),(9,'flour','superstore',700,20),(10,'gun_powders','neds',1,4200);
 /*!40000 ALTER TABLE `Inventory` ENABLE KEYS */;
 UNLOCK TABLES;
 
