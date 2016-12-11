@@ -20,3 +20,8 @@
 - added summary of data to homepage, refactored Stock model - KL
 - added quantity box in sales and included a thank you message - BC
 - updated exsisting files for better cosistency; added more styling to pages, revamped all the single-item pages and fixed error where bootstrap wasn't linked to pages properly; - MK
+
+
+##### Release 2.0
+- Added InventoryApi so people can call this controller to make api requests; Updated Inventory model to use the database for data - MK
+- Updated the backend_dump.sql to use the same values the frontend db was using; Created a friendly error message when user visits home page of backend - MK
