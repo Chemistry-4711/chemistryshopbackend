@@ -39,31 +39,27 @@ class InventoryApi extends Rest_Controller {
     }
 
 
-    function index_put()
+    function item_put()
     {
         $key = $this->get('id');
-
-        // $record = json_decode(key($this->_put_args), true);
-
-        $record = array_merge(array('id' => $key), $this->_put_args);
+        // $record = array_merge(array('id' => $key), $this->_put_args);
+        $record = array_merge(array('id' => $key), json_decode(key($this->_put_args),true));
         $this->inventory->update($record);
         $this->response(array('ok'), 200);
     }
 
 
-    function index_post()
+    function item_post()
     {
         $key = $this->get('id');
 
-        // $record = json_decode(key($_POST), true);
-
-        $record = array_merge(array('id' => $key), $_POST);
+        $record = array_merge(array('id' => $key), json_decode(key($_POST),true));
         $this->inventory->add($record);
         $this->response(array('ok'), 200);
     }
 
 
-    function index_delete()
+    function item_delete()
     {
         $key = $this->get('id');
         $this->inventory->delete($key);
